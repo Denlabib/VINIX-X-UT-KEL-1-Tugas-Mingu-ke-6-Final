@@ -1,0 +1,479 @@
+body {
+  font-family: 'Poppins';
+}
+
+/* ===NAVBAR ITEM=== */
+
+.navbar-nav {
+  margin-bottom: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: #4B95C3; /* warna teks */
+  font-weight: 400;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* garis bawah (hidden dulu) */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background-color: #FE7F2D;
+  transition: width 0.4s ease;
+}
+
+/* hover */
+.navbar-nav .nav-link:hover {
+  color: #2176B5;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* active */
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+}
+
+/* garis bawah saat active */
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+/* ===END NAVBAR ITEM=== */
+
+
+/* ===HERO=== */
+.hero {
+  position: relative;
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.hero h1 {
+  max-width: 500px;
+  line-height: 1.4;
+}
+
+.hero p {
+  max-width: 450px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero .col-lg-6 {
+  padding-left: 20px;
+}
+/* ===END HERO=== */
+
+
+/* ===SECTION=== */
+.why-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.why-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.why-card h5 {
+  margin-bottom: 10px;
+  color: #08277A;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #08277A;
+  margin-bottom: 0;
+}
+/* ===END SECTION=== */
+
+
+/* ===BUTTON PRIMARY=== */
+.btn-primary {
+  padding: 16px 32px;
+  background-color: white;
+  color: #FE7F2D;
+  border: 2px solid #FE7F2D;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #FE7F2D;
+  color: white;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* ===BUTTON WARNING=== */
+.btn-warning {
+  padding: 16px 32px;
+  background-color: #FE7F2D;
+  color: white;
+  border: 2px solid #FE7F2D;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: white;
+  color: #FE7F2D;
+}
+
+.btn-warning:active {
+  transform: scale(0.97);
+}
+
+/* ===RESPONSIVE TEXT=== */
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+/* ===JOIN=== */
+
+.join {
+  background-color: #002643;
+}
+
+.join .btn {
+  margin-top: 15px;
+}
+/* ===END JOIN=== */
+
+
+/*  ===TESTIMONI=== */
+:root {
+    --primary-color: #2176B5;
+    --star-orange: #ffc107;
+}
+
+.review-section {
+    background-color: #f9fbfd;
+    color: var(--primary-color);
+}
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.brand-logo {
+    max-width: 160px;
+    margin-bottom: 10px;
+}
+
+.review-section p,
+.review-section span,
+.review-section small,
+.review-section h1,
+.review-section h2,
+.review-section h3,
+.review-section h4,
+.review-section h5,
+.review-section h6 {
+    color: var(--primary-color);
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.stars,
+.star-mini {
+    color: var(--star-orange);
+    font-size: 14px;
+}
+
+.review-card {
+    border: 1px solid #d0e1f9;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-link {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #145a86;
+}
+
+.review-section .rating-mini,
+.review-section .star-mini {
+    color: #FF9800 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .brand-header {
+        text-align: center;
+    }
+}
+/*  ===END TESTIMONI=== */
+
+
+/* ===== MEMBERSHIP SECTION ===== */
+.membership {
+    background: #002643;
+    color: #F0F2F8;
+}
+
+.membership-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.price-box {
+    background: #FE7F2D;
+    padding: 12px 24px;
+    border-radius: 16px;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.benefit h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.benefit p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.input-custom {
+    border-radius: 12px;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #F0F2F8;
+    color: #fff;
+}
+
+.input-custom::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* -- ===END MEMBERSHIP=== /*
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #fff;
+}
+
+.footer-line {
+    border-top: 2px solid #2176B5;
+}
+
+.footer-logo {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #2176B5;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.footer-col h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2176B5;
+}
+
+.footer-col {
+    padding-right: 10px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #2176B5;
+    margin: 0 0 6px;
+    transition: 0.2s ease;
+}
+
+.footer-col p:hover {
+    opacity: 0.7;
+    transform: translateX(2px);
+}
+/* === END FOOTER === */
+
+
+/* ========================= */
+/*  RESPONSIVE MOBILE */
+/* ========================= */
+@media (max-width: 768px) {
+
+ .hero .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .navbar .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+ /* === NAVBAR MOBILE === */
+@media (max-width: 768px) {
+
+  /* kasih jarak antar menu */
+  .navbar-nav {
+    margin-bottom: 15px;
+  }
+
+  /* tambah jarak bawah tiap item */
+  .navbar-nav .nav-item {
+    margin-bottom: 8px;
+  }
+
+  /* turunin posisi garis biar gak nempel */
+  .navbar-nav .nav-link::after {
+    bottom: -8px;
+  }
+  /* Spacing antar menu */
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* Button turun ke bawah & kasih jarak */
+  .navbar .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+}
+/* === END NAVBAR MOBILE === */
+
+/* === BUTTON MOBILE FIX === */
+@media (max-width: 768px) {
+
+  .btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 14px;
+    margin-top: 10px;
+    width: auto !important;
+  }
+
+}
+/* === END BUTTON MOBILE FIX === */
+
+
+/* === Why Card === */
+.why-card {
+    padding: 20px;
+  }
+
+  /* === START JOIN === */
+ .join {
+    text-align: center;
+  }
+
+  .join-icon {
+    width: 220px;
+    margin: 20px 0;
+  }
+/* === END JOIN === */
+
+/* === MEMBERSHIP === */
+   .membership-title {
+        font-size: 1.8rem;
+    }
+
+    .price-box {
+        font-size: 1rem;
+    }
+
+    .benefit {
+        text-align: center;
+    }
+
+/* === END MEMBERSHIP === */
+
+/* === FOOTER === */
+ .footer-brand {
+        margin-bottom: 20px;
+    }
+
+/* === END FOOTER === */
