@@ -51,10 +51,12 @@ body {
 /* ===HERO=== */
 .hero {
   position: relative;
-  background-image: url('./images/hero1.png');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+.hero {
+  background-image: url(/VINIX-X-UT-KEL-1-Tugas-Mingu-ke-6-Final/images/hero1.png);
 }
 .hero h1 {
   max-width: 500px;
